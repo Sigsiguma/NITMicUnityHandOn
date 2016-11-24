@@ -53,6 +53,6 @@ Unityではこのようにヒエラルキーにモノを置くと、シーン上
 
 最後に、シリンダーを砲塔だとわかるように名前をTurretに変更しておきましょう。  
 
-[←ウィンドウの概要とフォルダーの作成](./Window and folder.md) | [マテリアルを作ろう→](./MakePlayer.md)
+[←ウィンドウの概要とフォルダーの作成](./Window and folder.md) | [マテリアルを作ろう→](./MakeMaterial.md)
 
 [目次に戻る](../../README.md)  
