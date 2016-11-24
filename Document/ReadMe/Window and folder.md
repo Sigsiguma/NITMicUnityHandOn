@@ -54,6 +54,6 @@
 上の写真はBalloonCoin!のフォルダ分けの感じ  
 あくまで参考程度にどうぞ  
 
-[←プロジェクトの作成](./MakeProject.md) | [Next→]()
+[←プロジェクトの作成](./MakeProject.md) | [自機を作ろう！→](./MakePlayer.md)
 
 [目次に戻る](../../README.md)  
