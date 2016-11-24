@@ -19,3 +19,8 @@
 全ての設定が完了したら、CreateProjectを押して、プロジェクトを作成します。  
 
 ![pro2](../Images/make_project2.png)
+
+
+[→]()
+
+[目次に戻る](../../README.md)  

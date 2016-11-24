@@ -4,5 +4,5 @@
 著者のUnity歴もまだ半年ちょっとと短いため、間違いも有るかと思いますが、どうかご了承ください。
 
 # 目次
-- [プロジェクトの作成](./Document/ReadMe/MakeProject.md)
-- [a](# 2. a)
+1. [プロジェクトの作成](./Document/ReadMe/MakeProject.md)
+2. [ウィンドウの概要とフォルダーの作成  ](./Document/ReadMe/Window and folder.md)
