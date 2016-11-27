@@ -88,6 +88,8 @@ transformが持つpositionの値を変更してやれば、物体の位置が変
 最後に、Ctrl + P か、Unityエディタ上の再生ボタンを押して、実行してみましょう。  
 無事プレイヤーが動いていたら成功です！
 
+![cre5](../Images/ControllPlayer5.png)
+
 [←マテリアルを作ろう](./MakeMaterial.md) | [Next→](./MakeMaterial.md)
 
 [目次に戻る](../../README.md)  
