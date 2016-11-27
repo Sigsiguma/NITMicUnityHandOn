@@ -22,7 +22,7 @@ Unityエディタ上からスクリプトを作成すると、ここに入力さ
 以下に作成すべきコードを示します。
 
 
-````cs:MovePlayer.cs
+````cs
 using UnityEngine;
 using System.Collections;
 
