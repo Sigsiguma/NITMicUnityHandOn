@@ -71,6 +71,6 @@ Animatorウィンドウは、UnityのWindowメニューから、Animatorをク�
 
 最後に、シーン上においてあるコインは削除しておきましょう。
 
-[←Prefabを作ろう](./MakePrefab.md) | [Next→](./MakeMaterial.md)
+[←Prefabを作ろう](./MakePrefab.md) | [Rigidbodyを使ってみよう→](./UseRigidbody.md)
 
 [目次に戻る](../../README.md)  

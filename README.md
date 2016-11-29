@@ -11,3 +11,4 @@
 5. [自機を操作しよう](./Document/ReadMe/ControllPlayer.md)
 6. [Prefabを作ろう](./Document/ReadMe/MakePrefab.md)
 7. [Animatorを使ってみよう](./Document/ReadMe/UseAnimator.md)
+8. [Rigidbodyを使ってみよう](./Document/ReadMe/UseRigidbody.md)
