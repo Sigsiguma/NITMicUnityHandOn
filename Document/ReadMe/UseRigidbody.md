@@ -147,6 +147,6 @@ Awakeについて説明すると、これはオブジェクトがInstantiateさ�
 すると、ビルにぶつかってもすり抜けなくなったと思います。
 プレイヤーの移動速度が遅いと感じる人は、スクリプトからmove_speed_を変更してみましょう。
 
-[←Animatorを使ってみよう](./UseAnimator.md) | [Next→](./UseAnimator.md)
+[←Animatorを使ってみよう](./UseAnimator.md) | [衝突判定のイベントについて学ぼう→](./LearnBounds.md)
 
 [目次に戻る](../../README.md)  

@@ -52,7 +52,7 @@ public class CoinGenerator : MonoBehaviour {
         int pos_x = Random.Range(-90, 90);
         int pos_z = Random.Range(-90, 90);
 
-        Vector3 pos = new Vector3(pos_x, 5, pos_z);
+        Vector3 pos = new Vector3(pos_x, 1, pos_z);
         return pos;
     }
 
