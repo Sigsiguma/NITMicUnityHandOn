@@ -10,3 +10,4 @@
 4. [マテリアルを作ろう](./Document/ReadMe/MakeMaterial.md)
 5. [自機を操作しよう](./Document/ReadMe/ControllPlayer.md)
 6. [Prefabを作ろう](./Document/ReadMe/MakePrefab.md)
+7. [Animatorを使ってみよう](./Document/ReadMe/UseAnimator.md)

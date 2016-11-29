@@ -91,6 +91,6 @@ CoinGeneratorができたら、スクリプトをアタッチしましょう。
 では、最後にシーンを保存して、ゲームを実行してみましょう。  
 Iキーを押すたびにコインが生成されれば完成です。  
 
-[←自機を操作しよう](./ControllPlayer.md) | [Next→](./MakeMaterial.md)
+[←自機を操作しよう](./ControllPlayer.md) | [Animatorを使ってみよう→](./UseAnimator.md)
 
 [目次に戻る](../../README.md)  
