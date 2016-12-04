@@ -12,8 +12,18 @@ public class PlayerStatus : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
 
         //もし、衝突対象がコインなら
-        if (other.tag == "coin") {
+        if (other.tag == "Coin") {
             ++coin_num_;
+            Debug.Log(coin_num_);
+        }
+
+    }
+
+    private void OnCollisionEnter(Collision other) {
+
+        if (other.transform.tag == "Enemy") {
+            //ゲームオーバー
+            Destroy(gameObject);
         }
 
     }

@@ -118,6 +118,9 @@ public class MovePlayer : MonoBehaviour {
             Vector3 vel = rgbd_.velocity;
             vel.z = move_speed_;
             rgbd_.velocity = vel;
+        } else {
+            //キーを押していないときは速度0
+            rgbd_.velocity = Vector3.zero;
         }
     }
 }

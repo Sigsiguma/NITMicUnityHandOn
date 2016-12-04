@@ -5,16 +5,16 @@
 そこで、Colliderコンポーネントを少し見てみましょう。  
 まず、Colliderのマテリアルについて説明します。  
 これは、普段のオブジェクトのマテリアルと同様に、Colliderの性質を決めるものです。  
-Colliderのマテリアルは、PhysicsMaterialというものを作成して、利用します。  
+Colliderのマテリアルは、PhysicsMaterialというものを作成して利用します。  
 今回のゲームでは、PhysicsMaterialを使用するところはないと思いますが、一つ例として下に示しておきます。  
 
 ![col1](../Images/col1.png)
 
-これは、反発係数を1として、摩擦を0としたPhysicsMaterialで、これをColliderのマテリアルの欄に入れると適用されます。  
+これは、反発係数を1として摩擦を0としたPhysicsMaterialで、これをColliderのマテリアルの欄に入れると適用されます。  
 同様に、様々な物理特性をもつオブジェクトを作れるので、PhysicsMaterialも扱えるようになっておくと良いでしょう。  
 それぞれのパラメータの意味に関しては、[PhysicsMaterial](https://docs.unity3d.com/ja/current/Manual/class-PhysicMaterial.html)を見て下さい。  
 
-続いて、重要なのは、IsTriggerというチェック欄です。  
+続いて重要なのは、IsTriggerというチェック欄です。  
 ここにチェックを入れると、その物体は衝突はしないが、その範囲に入ったというイベントだけが取得できます。  
 例えば、入ると回復ができるゾーンなどを作るとします。  
 この場合、そのゾーンに入らなければならないため、衝突判定は取りたくないですがその範囲に入ったというイベントは欲しいはずです。  
@@ -102,6 +102,59 @@ public class CoinDestroy : MonoBehaviour {
 では、ゲームを実行して、Iキーを押してコインを発生させてみて、取りに行ってみましょう。  
 無事、取得できれば完成です。  
 
-[←Rigidbodyを使ってみよう](./UseRigidbody.md) | [Next→](./UseAnimator.md)
+次に、当たってはいけない敵を作ってみましょう。  
+ひとまず、敵は常に静止していることにして作成します。  
+敵はCubeオブジェクトを作成して名前をEnemyに変更し、赤色のマテリアルをつけてプレハブ化しておきましょう。  
+また、Enemyタグを新しく作成し、Enemyタグを付けておきましょう。
+どれも今までの章で説明してきた内容で作成できるはずなので、わからない場合は戻って復習しておきましょう。  
+
+![col6](../Images/col6.png)
+
+敵が作成できたら、PlayerStatusスクリプトを以下のように編集しておきましょう。  
+
+````cs
+using UnityEngine;
+using System.Collections;
+
+public class PlayerStatus : MonoBehaviour {
+
+    private int coin_num_;
+
+    private void Awake() {
+        coin_num_ = 0;
+    }
+
+    private void OnTriggerEnter(Collider other) {
+
+        //もし、衝突対象がコインなら
+        if (other.tag == "Coin") {
+            ++coin_num_;
+        }
+
+    }
+
+    private void OnCollisionEnter(Collision other) {
+
+        if (other.transform.tag == "Enemy") {
+            //ゲームオーバー
+            Destroy(gameObject);
+        }
+
+    }
+}
+````
+
+上のスクリプトで説明していないのは、OnCollisionEnterというイベント関数のみです。  
+OnCollisionEnterは、OnTriggerEnterとは違い、衝突する物体同士がIsTriggerにチェックがついて居ない場合に呼ばれます。  
+このとき、OnTriggerEnterとは異なり引数がCollision型となっているので、注意しましょう。  
+当たり判定に関するイベントに関してはまだいくつか種類があるので、[UnityのRigidbodyとColliderで衝突判定 - Qiita](http://qiita.com/yando/items/0cd2daaf1314c0674bbe)あたりの記事を読んで勉強しておきましょう。  
+やっていることは、コインを取得のときと同様で、敵が当たってきた場合はプレイヤーをDestroy、つまり削除しています。  
+この場合はプレイヤーが死ぬことになるので、ゲームオーバーを意味します。  
+
+それでは、適当に敵を配置して、当たって見ましょう。  
+プレイヤーが消えれば完成です。といいたいのですが、プレイヤーが消えると以下のようなエラーが大量にConsoleに出力されたと思います。  
+長くなってしまうので、この原因は次回解明することにします。  
+
+[←Rigidbodyを使ってみよう](./UseRigidbody.md) | [デバッグについて学ぼう→](./LearnDebug.md)
 
 [目次に戻る](../../README.md)  

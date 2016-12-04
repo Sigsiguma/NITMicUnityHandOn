@@ -10,7 +10,9 @@ public class CameraFollow : MonoBehaviour {
     private Vector3 difference_;
 
     private void LateUpdate() {
-        transform.position = target_.position + difference_;
+        if (target_ != null) {
+            transform.position = target_.position + difference_;
+        }
     }
 }
 
