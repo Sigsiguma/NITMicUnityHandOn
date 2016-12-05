@@ -13,3 +13,5 @@
 7. [Animatorを使ってみよう](./Document/ReadMe/UseAnimator.md)
 8. [Rigidbodyを使ってみよう](./Document/ReadMe/UseRigidbody.md)
 9. [衝突判定のイベントについて学ぼう](./Document/ReadMe/LearnBounds.md)
+10. [ログについて学ぼう](./Document/ReadMe/LearnDebug.md)
+11. [敵を動かそう](./Document/ReadMe/MakeEnemy.md)

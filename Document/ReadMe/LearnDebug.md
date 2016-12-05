@@ -1,4 +1,4 @@
-## 10. デバッグについて学ぼう
+## 10. ログについて学ぼう
 
 前回の最後に現れた謎のエラーについて原因を解明していきます。  
 
@@ -101,6 +101,6 @@ public class PlayerStatus : MonoBehaviour {
 また、Debug.LogErrorや、Debug.LogWarningなど様々な種類のログがあるので、なっていてはいけない値のときはDebug.LogErrorでエラー文を出すなど、使い分けていきましょう。  
 
 
-[←衝突判定のイベントについて学ぼう](./LearnBounds.md) | [Next→](./UseAnimator.md)
+[←衝突判定のイベントについて学ぼう](./LearnBounds.md) | [敵を動かそう→](./MakeEnemy.md)
 
 [目次に戻る](../../README.md)  

@@ -83,6 +83,7 @@
 'Assets/Scripts/InGame/Camera/CameraFollow.cs'
 'Assets/Scripts/InGame/Coin/CoinDestroy.cs'
 'Assets/Scripts/InGame/Coin/CoinGenerator.cs'
+'Assets/Scripts/InGame/Enemy/EnemyMove.cs'
 'Assets/Scripts/InGame/Player/MovePlayer.cs'
 'Assets/Scripts/InGame/Player/PlayerStatus.cs'
 -r:'/Applications/Unity/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll'
