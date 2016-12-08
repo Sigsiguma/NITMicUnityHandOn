@@ -3,14 +3,20 @@ using System.Collections;
 
 public class CoinGenerator : MonoBehaviour {
 
+    private const float generate_span_ = 2f;
+
     [SerializeField]
     private GameObject coin_prefab_;
 
-    //public GameObject coin_prefab_; でもよいが、上を推奨
+    private void Start() {
+        StartCoroutine(GenerateCoin());
+    }
 
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.I)) {
+    private IEnumerator GenerateCoin() {
+
+        while (true) {
             Instantiate(coin_prefab_, RandomCoinPos(), Quaternion.identity);
+            yield return new WaitForSeconds(2f);
         }
     }
 

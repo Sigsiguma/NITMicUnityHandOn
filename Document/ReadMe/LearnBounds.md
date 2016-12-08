@@ -155,6 +155,6 @@ OnCollisionEnterは、OnTriggerEnterとは違い、衝突する物体同士がIs
 プレイヤーが消えれば完成です。といいたいのですが、プレイヤーが消えると以下のようなエラーが大量にConsoleに出力されたと思います。  
 長くなってしまうので、この原因は次回解明することにします。  
 
-[←Rigidbodyを使ってみよう](./UseRigidbody.md) | [デバッグについて学ぼう→](./LearnDebug.md)
+[←Rigidbodyを使ってみよう](./UseRigidbody.md) | [ログについて学ぼう→](./LearnDebug.md)
 
 [目次に戻る](../../README.md)  
