@@ -31,6 +31,7 @@ public class EnemyMove : MonoBehaviour {
         if (player_distance < 50f) {
             pos_ = player_.position;
             agent_.SetDestination(player_.position);
+            agent_.speed = 8.0f;
         } else if (target_distance < 10f) {
             Patrol();
         }
@@ -41,6 +42,8 @@ public class EnemyMove : MonoBehaviour {
 
         float x = Random.Range(-100f, 100f);
         float z = Random.Range(-100f, 100f);
+
+        agent_.speed = 5.0f;
 
         pos_ = new Vector3(x, 0, z);
 
