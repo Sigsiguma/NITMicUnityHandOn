@@ -166,6 +166,6 @@ public class ResultManager : MonoBehaviour {
 これで、一応ゲームとしての一通りの流れはできました。  
 あとは次回以降で見栄えを良くしていきましょう！
 
-[←UIを作ろう](./MakeUI.md) | [Next→](./LearnDebug.md)
+[←UIを作ろう](./MakeUI.md) | [見栄えを良くしよう→](./UseAsset.md)
 
 [目次に戻る](../../README.md)  
