@@ -90,6 +90,6 @@ transformが持つpositionの値を変更してやれば、物体の位置が変
 
 ![cre5](../Images/ControllPlayer5.png)
 
-[←マテリアルを作ろう](./MakeMaterial.md) | [Next→](./MakeMaterial.md)
+[←マテリアルを作ろう](./MakeMaterial.md) | [Prefabを作ろう→](./MakePrefab.md)
 
 [目次に戻る](../../README.md)  
