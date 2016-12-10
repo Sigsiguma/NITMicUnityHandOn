@@ -103,6 +103,6 @@ public class CoinGenerator : MonoBehaviour {
 この状態で、ゲームを起動してみると、自動でコインが生成されるようになったかと思います。  
 このように、一定時間ごとにこれをしたい、とか何秒か待ってからこれをしたいという処理には非常にコルーチンは向いているので、積極的に学んで利用していきましょう。  
 
-[←敵を動かそう](./MakeEnemy.md) | [UIを作ろう→](./LearnDebug.md)
+[←敵を動かそう](./MakeEnemy.md) | [UIを作ろう→](./MakeUI.md)
 
 [目次に戻る](../../README.md)  

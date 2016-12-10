@@ -30,7 +30,7 @@
 9. [衝突判定のイベントについて学ぼう](./Document/ReadMe/LearnBounds.md)
 10. [ログについて学ぼう](./Document/ReadMe/LearnDebug.md)
 11. [敵を動かそう](./Document/ReadMe/MakeEnemy.md)
-12. [コルーチンを使おう](./Document/ReadMe/UseCorou.md)
+12. [コルーチンを使おう](./Document/ReadMe/UseCoroutine.md)
 13. [UIを作ろう](./Document/ReadMe/MakeUI.md)
 14. [シーンを遷移しよう](./Document/ReadMe/UseScene.md)
 15. [見栄えを良くしよう](./Document/ReadMe/UseAsset.md)
